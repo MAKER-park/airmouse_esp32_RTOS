@@ -68,7 +68,11 @@ Icons  https://gist.github.com/rxaviers/7360908
 
 5. ESP32 보드를 컴퓨터에 연결한 상태에서 마우스로 움직여 보세요. 움직임이 컴퓨터또는 안드로이드 모바일 기기 상에서 포인터 위치에 반영되어야 합니다.
 
-6. 동작에 대한 결과는 'https://youtu.be/oS-1Ow5L00g'다음 영상과 비교할 수 있습니다.
+6. 동작에 대한 결과는 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oS-1Ow5L00g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+ 다음 영상과 비교할 수 있습니다.
 
 
 ## 기여하기
