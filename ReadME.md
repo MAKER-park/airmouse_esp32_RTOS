@@ -70,7 +70,8 @@ Icons  https://gist.github.com/rxaviers/7360908
 
 6. 동작에 대한 결과는 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oS-1Ow5L00g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![영상 설명](https://img.youtube.com/vi/oS-1Ow5L00g/0.jpg)](https://www.youtube.com/watch?v=oS-1Ow5L00g)
+
 
  다음 영상과 비교할 수 있습니다.
 
