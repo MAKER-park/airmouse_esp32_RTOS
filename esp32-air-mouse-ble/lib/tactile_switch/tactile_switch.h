@@ -1,0 +1,44 @@
+#ifndef ESP32_TACTILE_SWITCH_H
+#define ESP32_TACTILE_SWITCH_H
+
+#include "freertos/queue.h"
+#include "driver/gpio.h"
+
+#ifndef CONFIG_ESP32_BUTTON_LONG_PRESS_DURATION_MS
+#define CONFIG_ESP32_BUTTON_LONG_PRESS_DURATION_MS (2000)
+#endif
+
+#ifndef CONFIG_ESP32_BUTTON_LONG_PRESS_REPEAT_MS
+#define CONFIG_ESP32_BUTTON_LONG_PRESS_REPEAT_MS (100)
+#endif
+
+#ifndef CONFIG_ESP32_BUTTON_QUEUE_SIZE
+#define CONFIG_ESP32_BUTTON_QUEUE_SIZE (4)
+#endif
+
+#ifndef CONFIG_ESP32_BUTTON_TASK_STACK_SIZE
+#define CONFIG_ESP32_BUTTON_TASK_STACK_SIZE 3072
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define PIN_BIT(x) (1ULL<<x)
+
+#define BUTTON_DOWN (1)
+#define BUTTON_UP (2)
+#define BUTTON_HELD (3)
+
+typedef struct {
+  uint8_t pin;
+  uint8_t event;
+} button_event_t;
+
+esp_err_t tactile_switch_init();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
